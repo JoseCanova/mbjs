@@ -12,12 +12,17 @@ mount_result = function(data){
 													<td class="td-artist-id">${row.artistId}</td>
 													<td class="name_result">${row.name}</td>
 													<td class="name_result">${row.sortName}</td>
-													<td class="td-artist-gid">${row.gid}</td>
+													<td class="td-artist-gid">
+														<div class="gid-result">
+															<span  title="${row.gid}">${row.gid}</span>
+														</div>
+													</td>
 												</tr>`;
 				return template_artist_result;
 	}));
 	$(".div-result").css("display" , "block");
 }
+
 $(document).ready(function(){
 		$("#search").on("click" , () => {
 			$(".div-result").css("display" , "none");

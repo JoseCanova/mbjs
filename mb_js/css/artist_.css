@@ -10,7 +10,7 @@ div.div-artist{
 	border: thin;
 	display:block;
 	overflow:hidden;
-	width: 88vw;
+	width: 90vw;
 }
 
 div.div-result{ 
@@ -49,6 +49,11 @@ tbody.results {
 	overflow: scroll;
 }
 
+tbody.results tr { 
+	display: compact;	
+	heigth: 22px;
+}
+
 .td-artist-id{ 
 	width: calc(10%);
 }
@@ -59,7 +64,31 @@ tbody.results {
 
 .td-artist-gid { 
 	width: calc(20%);
+}
+
+div.gid-result { 
+	width: calc(100%);
+	overflow-x: hidden;
+	display:  flex;
+	position:relative;
 	text-overflow: ellipsis;
+	overflow-y: auto;
+	height: 1.1rem;
+}
+
+th.th-scroll {
+	padding:0px;
+	margin:0px;
+	content: '';
+	width:10px;
+}`
+
+div.div-scroll { 
+	width:10px;
+	padding:0px;
+	margin:0px;
+	display: fixed;
+	content: ''; 
 }
 
 /*
