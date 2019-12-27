@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title>artist page</title>
-<script src="/mbrainz/script/jquery.js"></script>
-<script src="/mbrainz/script/application.js"></script>
+<script src="script/jquery.js"></script>
+<script src="script/application.js"></script>
+<link rel="stylesheet" type="text/css" href="css/artist_.css" />
 </head>
 <body>
 
@@ -14,18 +15,18 @@
 			<button title="Search" id="search">Search</button> 
 	</div>
 	<div class="container">
-	<table>
-		<thead>
-			<tr>
-				<td>Id</td>
-				<td>Name</td>
-				<td>Sort Name</td>
-				<td>GID</td>
-			</tr>
-		</thead>
-		<tbody id="result">
-		</tbody>
-	</table>
+		<table class="table-artist">
+			<thead class="table-artist-head">
+				<tr class="table-row-artist-atributes">
+					<td>Id</td>
+					<td>Name</td>
+					<td>Sort Name</td>
+					<td>GID</td>
+				</tr>
+			</thead>
+			<tbody id="result" class="results">
+			</tbody>
+		</table>
 	</div>
 </div>
 

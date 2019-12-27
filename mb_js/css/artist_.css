@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+div.container {
+	display: block;
+	width: calc(100% - 5px);
+}
+
+table.table-artist {
+	width: 100%;
+}
+
+
+tr.table-row-artist-atributes {
+	justify-content: space-between;
+}
+
+tr.table-row-artist-atributes td {
+		justify-content: space-between;
+}
+
+tbody.results tr{
+	width: 100%;
+	align-items: left;
+	justify-content: space-between;
+}
+
+tr.results td {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
