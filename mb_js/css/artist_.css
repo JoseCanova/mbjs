@@ -9,6 +9,12 @@ table.table-artist {
 	width: 100%;
 }
 
+table.table-artist thead {
+	position: sticky;
+	top: -1px;
+	background: red;
+}
+
 
 tr.table-row-artist-atributes {
 	justify-content: space-between;
@@ -21,11 +27,14 @@ tr.table-row-artist-atributes td {
 tbody.results tr{
 	width: 100%;
 	align-items: left;
+	/* display: flex;
+	flex-direction:row; */
 	justify-content: space-between;
 }
 
-tr.results td {
+tbody.results tr td {
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
+/* 	display: flex;
+	flex-direction:row;*/
+ 	justify-content: space-between;
 }
