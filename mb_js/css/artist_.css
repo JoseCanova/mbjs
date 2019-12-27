@@ -32,9 +32,10 @@ tbody.results tr{
 	justify-content: space-between;
 }
 
-tbody.results tr td {
+/* tbody.results tr td {
 	width: 100%;
-/* 	display: flex;
-	flex-direction:row;*/
+	display: flex;
+	flex-direction:row;
  	justify-content: space-between;
 }
+ */

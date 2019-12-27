@@ -3,30 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <title>artist page</title>
+<script src="script/bootstrap.js"></script>
+<script src="script/jquery.js"></script>
 <script src="script/jquery.js"></script>
 <script src="script/application.js"></script>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css" />
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-reboot.css" />
 <link rel="stylesheet" type="text/css" href="css/artist_.css" />
 </head>
 <body>
 
 <div class="main">
-	<div class="form_container">
-			<input id="name" type="text" size="40" />
-			<button title="Search" id="search">Search</button> 
-	</div>
-	<div class="container">
-		<table class="table-artist">
-			<thead class="table-artist-head">
-				<tr class="table-row-artist-atributes">
-					<td>Id</td>
-					<td>Name</td>
-					<td>Sort Name</td>
-					<td>GID</td>
-				</tr>
-			</thead>
-			<tbody id="result" class="results">
-			</tbody>
-		</table>
+  <div class="container">
+		<div class="row">
+				<input id="name" type="text" size="40" />
+				<button title="Search" id="search">Search</button> 
+		</div>
+		<div class="row">
+			<table class="table-artist">
+				<thead class="table-artist-head">
+					<tr class="table-row-artist-atributes">
+						<td>Id</td>
+						<td>Name</td>
+						<td>Sort Name</td>
+						<td>GID</td>
+					</tr>
+				</thead>
+				<tbody id="result" class="results">
+				</tbody>
+			</table>
+		</div>
 	</div>
 </div>
 
