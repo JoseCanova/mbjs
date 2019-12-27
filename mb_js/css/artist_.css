@@ -5,17 +5,64 @@ div.container {
 	width: calc(100% - 5px);
 }
 
-table.table-artist {
+div.div-artist{ 
+	height:40px;
+	border: thin;
+	display:block;
+	overflow:hidden;
+	width: 88vw;
+}
+
+div.div-result{ 
+	height:60vh;
+	border: thin;
+	display:block;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	width: 90vw;
+	display:none;
+}
+
+body { 
 	width: 100%;
+    height: 100%;
+    margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
 
-table.table-artist thead {
-	position: sticky;
+table.table-artist {
+	width:90vw;
+}
+
+
+ tr.table-row-artist {
 	top: -1px;
-	background: red;
+	background: gray !important;
 }
 
 
+tbody.results { 
+	display:table-row-group;
+	height: 50vh;
+	width:90vw;
+	overflow: scroll;
+}
+
+.td-artist-id{ 
+	width: calc(10%);
+}
+
+.td-artist-name{
+	width: calc(40%);
+}
+
+.td-artist-gid { 
+	width: calc(20%);
+	text-overflow: ellipsis;
+}
+
+/*
 tr.table-row-artist-atributes {
 	justify-content: space-between;
 }
@@ -24,14 +71,27 @@ tr.table-row-artist-atributes td {
 		justify-content: space-between;
 }
 
-tbody.results tr{
+tbody.results { 
+	height: 80vh;
+	overflow-y: scroll;
+} */
+
+/* tbody.results tr{
 	width: 100%;
 	align-items: left;
-	/* display: flex;
-	flex-direction:row; */
+	display: flex;
+	flex-direction:row;
 	justify-content: space-between;
 }
-
+ */
+/* td.td-artist-gid { 
+	size: 20vw;
+	display: block;
+	justify-content: space-between;
+	word-break: break-all;
+	overflow-wrap: break-word; 
+}
+ */
 /* tbody.results tr td {
 	width: 100%;
 	display: flex;
@@ -39,3 +99,6 @@ tbody.results tr{
  	justify-content: space-between;
 }
  */
+ 
+
+ 

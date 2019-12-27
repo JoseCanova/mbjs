@@ -3,16 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>artist page</title>
-<script src="script/bootstrap.js"></script>
-<script src="script/jquery.js"></script>
 <script src="script/jquery.js"></script>
 <script src="script/application.js"></script>
-<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
-<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css" />
-<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-reboot.css" />
-<link rel="stylesheet" type="text/css" href="css/artist_.css" />
+<link rel="stylesheet" href="mdb_js/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/artist_.css">
+<!-- Material Design Bootstrap -->
 </head>
-<body>
+<body >
 
 <div class="main">
   <div class="container">
@@ -20,22 +17,32 @@
 				<input id="name" type="text" size="40" />
 				<button title="Search" id="search">Search</button> 
 		</div>
-		<div class="row">
-			<table class="table-artist">
+		<div class="row div-artist">
+			<table id="artistsTable" class="table-artist-row table table-striped table-bordered">
 				<thead class="table-artist-head">
-					<tr class="table-row-artist-atributes">
-						<td>Id</td>
-						<td>Name</td>
-						<td>Sort Name</td>
-						<td>GID</td>
+					<tr class="table-row-artist;" >
+						<th class="td-artist-id " >Id</th>
+						<th class="td-artist-name " >Name</th>
+						<th class="td-artist-name " >Sort Name</th>
+						<th class="td-artist-gid " >GID</th>
 					</tr>
 				</thead>
-				<tbody id="result" class="results">
-				</tbody>
 			</table>
 		</div>
+		<div class="row div-result">
+			<table class="table-artist table table-striped table-bordered" >
+				<tbody id="result" class="results">
+					</tbody>
+			 </table>
+			 </div>
+		
 	</div>
 </div>
-
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="mdb_js/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="mdb_js/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <!-- Your custom scripts (optional) -->
 </body>
 </html>
