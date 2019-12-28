@@ -19,10 +19,9 @@ div.gid-result {
 }
 
 div.col-label{ 
-	border: thick;
-	border-color: black;
 	overflow:hidden;
 	text-align: left;
+	background-color: lime;
 }
 
 div.div-result{ 

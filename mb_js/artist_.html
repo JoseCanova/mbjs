@@ -2,36 +2,53 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>artist page</title>
 <script src="script/jquery.js"></script>
 <script src="script/application.js"></script>
+<script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.min.css">
 <link rel="stylesheet" href="css/artist_.css">
 <!-- Material Design Bootstrap -->
 </head>
 <body>
-
-	<div class="main">
-		<div class="container">
-			<div class="row">
-				<input id="name" type="text" size="40" />
-				<button title="Search" id="search">Search</button>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+  <a class="navbar-brand" href="#">Top navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <div class="form-inline mt-2 mt-md-0">
+      <input id="search-text" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button id="search1" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </div>
+  </div>
+</nav>
+<main role="main" class="container">
+			<div id="artist-container" class="container d-none">
+				<div class="row div-artist">
+					<div class="col col-label">Id</div>
+					<div class="col-4 col-label">Name</div>
+					<div class="col-4 col-label">SortName</div>
+					<div class="col col-label">Gid</div>
+				</div>
 			</div>
-			<div class="row div-artist">
-				<div class="col col-label">Id</div>
-				<div class="col-4 col-label">Name</div>
-				<div class="col-4 col-label">SortName</div>
-				<div class="col col-label">Gid</div>
+			<div id="result" class="container div-result">
 			</div>
-		</div>
-		<div id="result" class="container div-result">
-		</div>
-	</div>
-	<!-- Bootstrap tooltips -->
-	<script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
-	<!-- Bootstrap core JavaScript -->
-	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-	<!-- MDB core JavaScript -->
-	<!-- Your custom scripts (optional) -->
+</main>	
 </body>
 </html>
