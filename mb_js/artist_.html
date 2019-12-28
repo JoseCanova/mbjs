@@ -9,49 +9,29 @@
 <link rel="stylesheet" href="css/artist_.css">
 <!-- Material Design Bootstrap -->
 </head>
-<body >
+<body>
 
-<div class="main">
-  <div class="container">
-		<div class="row">
+	<div class="main">
+		<div class="container">
+			<div class="row">
 				<input id="name" type="text" size="40" />
-				<button title="Search" id="search">Search</button> 
+				<button title="Search" id="search">Search</button>
+			</div>
+			<div class="row div-artist">
+				<div class="col col-label">Id</div>
+				<div class="col-4 col-label">Name</div>
+				<div class="col-4 col-label">SortName</div>
+				<div class="col col-label">Gid</div>
+			</div>
 		</div>
-		<div class="row div-artist">
-			<table id="artistsTable" class="table-artist-row table table-striped table-bordered">
-				<thead class="table-artist-head">
-					<tr class="table-row-artist;" >
-						<th class="td-artist-id " >Id</th>
-						<th class="td-artist-name " >Name</th>
-						<th class="td-artist-name " >Sort Name</th>
-						<th class="td-artist-gid " >GID</th>
-						<th class="th-scroll">
-							<div class="div-scroll"
-									style="width:10px;
-											padding:0px;
-											margin:0px;
-											display: fixed;
-											content: ''; ">
-							</div>
-						</th>
-					</tr>
-				</thead>
-			</table>
+		<div id="result" class="container div-result">
 		</div>
-		<div class="row div-result">
-			<table class="table-artist table table-striped table-bordered" >
-				<tbody id="result" class="results">
-				</tbody>
-			 </table>
-			 </div>
-		
 	</div>
-</div>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="mdb_js/js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="mdb_js/js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <!-- Your custom scripts (optional) -->
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="mdb_js/js/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="mdb_js/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<!-- Your custom scripts (optional) -->
 </body>
 </html>
