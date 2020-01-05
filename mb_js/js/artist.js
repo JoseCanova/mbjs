@@ -1,6 +1,3 @@
-/**
- * 
- */
 class Artist{
 	constructor (id,name,sortName,gid){ 
 		this.id = id; 
@@ -19,7 +16,7 @@ class ArtistView extends Artist {
 		return `<div class="row">
 					<div class="col">${this.id}</div>
 					<div class="col-4">${this.mountQuery()}${this.name}</a></div>
-					<div class="col-4">${this.sortName}</div>
+					<div class="col-4">${this.prepareArtistSortName()}</div>
 					<div class="col">
 						<div class="gid-result">
 							<span  title="${this.gid}">${this.gid}</span>
@@ -30,6 +27,12 @@ class ArtistView extends Artist {
 	
 	mountQuery(){ 
 		return  `<a href="https://www.google.com/search?q=${this.name.replace(" " , "+")}" target="new">`;
+	}
+
+	prepareArtistSortName(){ 
+		return `<a class="btn btn-primary btn-white" data-toggle="modal" data-target="#exampleModalCenter" data-artist="${this.id}">
+			  			${this.sortName}
+				</a>`
 	}
 };
 

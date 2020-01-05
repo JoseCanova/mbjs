@@ -25,8 +25,26 @@ div.col-label{
 }
 
 div.div-result{ 
-	height:60vh;
+	height:80vh;
 	border: thin;
 	overflow-y:auto;
 	overflow-x:hidden;
+}
+
+a.btn-white { 
+	background-color: white; 
+	color: blue;
+	border: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    background-color: lightblue;
+  }
+  div.gid-result {
+  	display: none;
+  }
+  div.col-gid {
+  	display: none; 
+  }
 }

@@ -5,4 +5,14 @@ class ArtistCredit{
 	}
 } 
 
-export {ArtistCredit};
+class ArtistCreditView extends ArtistCredit{ 
+	constructor (artistCreditId , name){ 
+		super (artistCreditId , name); 
+	}
+	
+	render (){
+		return `<div class="row">${this.name}</div>`;
+	}
+} 
+
+export {ArtistCredit, ArtistCreditView};
