@@ -1,6 +1,6 @@
 import {LitElement, html, css} from './node_modules/lit-element/lit-element.js';
-import './jquery.js';
 
+import './jquery.js';
 const host="/rest/brainz";
 
 class TopNav extends LitElement{ 
@@ -8,18 +8,17 @@ class TopNav extends LitElement{
 	constructor() {
 		super();
 	}
-
-
+	
 	createRenderRoot() {
 		return this;
 	}
+
 }
 
 export class NavBar extends TopNav {
 	constructor() {
 		super();
 	}
-
 	render() {
 		return html`
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
